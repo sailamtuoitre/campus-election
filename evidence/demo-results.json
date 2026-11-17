@@ -1,0 +1,82 @@
+{
+  "contract": "0xe78A0F7E598Cc8b0Bb87894B0F60dD2a88d6a8Ab",
+  "chainId": 1337,
+  "results": [
+    {
+      "name": "Nguyen Minh Anh",
+      "votes": 1
+    },
+    {
+      "name": "Tran Bao Linh",
+      "votes": 1
+    }
+  ],
+  "evidence": [
+    {
+      "label": "Administrator registers Nguyen Minh Anh",
+      "account": "0x90F8bf6A479f320ead074411a4B0e7944Ea8c9C1",
+      "transaction": "0x999519e15d1187eb87432046a8ee8f3197be473abe71914bc1e026428f2b1c29",
+      "block": 2,
+      "status": 1
+    },
+    {
+      "label": "Administrator registers Tran Bao Linh",
+      "account": "0x90F8bf6A479f320ead074411a4B0e7944Ea8c9C1",
+      "transaction": "0xdee68dc3492d85ab5143c85210d4b2b5e140971ed546ed1e0bf7e4f8c8c49e01",
+      "block": 3,
+      "status": 1
+    },
+    {
+      "label": "Account 1 cannot open voting",
+      "account": "0xFFcf8FDEE72ac11b5c542428B35EEF5769C409f0",
+      "transaction": "0x299e66cd85c4afde5ec71c6cf5cc8a9660c7baca46932869090e22374e60333a",
+      "block": 4,
+      "status": 0,
+      "reason": "Administrator only"
+    },
+    {
+      "label": "Administrator opens voting",
+      "account": "0x90F8bf6A479f320ead074411a4B0e7944Ea8c9C1",
+      "transaction": "0xf79521e0b7a2a600aa78d24031500e37a302ab05283ccee9f7a0b6e3307416ef",
+      "block": 5,
+      "status": 1
+    },
+    {
+      "label": "Account 1 votes for candidate 0",
+      "account": "0xFFcf8FDEE72ac11b5c542428B35EEF5769C409f0",
+      "transaction": "0x9383bcc010976b2151080ff6f53cf903db87c95748625915b330add979b1725f",
+      "block": 6,
+      "status": 1
+    },
+    {
+      "label": "Account 1 cannot vote twice",
+      "account": "0xFFcf8FDEE72ac11b5c542428B35EEF5769C409f0",
+      "transaction": "0x2893e15a8e5e177fba589dcab5323e21911167ad8d38831afabe93fd2d9fc174",
+      "block": 7,
+      "status": 0,
+      "reason": "Address already voted"
+    },
+    {
+      "label": "Account 0 votes independently for candidate 1",
+      "account": "0x90F8bf6A479f320ead074411a4B0e7944Ea8c9C1",
+      "transaction": "0xc78490f4bea54d11ba9aaafccd26a085ecc90933f3d32668c5c1ea726265f9a9",
+      "block": 8,
+      "status": 1
+    },
+    {
+      "label": "Administrator closes voting",
+      "account": "0x90F8bf6A479f320ead074411a4B0e7944Ea8c9C1",
+      "transaction": "0x140635578c5fd6fc002cf817910e9b443c0d7bc314a8df255431b758bceabc4a",
+      "block": 9,
+      "status": 1
+    },
+    {
+      "label": "Candidate registration remains fixed",
+      "account": "0x90F8bf6A479f320ead074411a4B0e7944Ea8c9C1",
+      "transaction": "0x0811ea1c9bc6391c1d16c359c0dcf16116f95186bffaa87421bcc69ed7f4a651",
+      "block": 10,
+      "status": 0,
+      "reason": "Registration closed"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "mode": "Real Ganache unlocked test accounts",
+  "checks": [
+    "two candidates registered",
+    "administrator opens voting",
+    "account 1 votes",
+    "repeat-vote button disabled",
+    "non-admin controls disabled",
+    "VoteCast event displayed",
+    "account 0 votes independently",
+    "administrator closes voting",
+    "mobile has no horizontal overflow",
+    "no page errors"
+  ],
+  "limitation": "MetaMask extension approval flow was not automated."
+}
